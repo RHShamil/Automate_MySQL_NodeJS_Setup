@@ -15,8 +15,8 @@ mkdir -p /usr/local/bin
 
 # Copy the MySQL check script to proper location
 cd /tmp/scripts
-cp check-mysql.sh /usr/local/bin/
-chmod +x /usr/local/bin/check-mysql.sh
+cp mysql-check.sh /usr/local/bin/
+chmod +x /usr/local/bin/mysql-check.sh
 
 # Wait for environment variable to be set
 max_attempts=30 
@@ -52,7 +52,7 @@ Wants=network.target
 [Service]
 Type=simple
 EnvironmentFile=/etc/environment
-ExecStart=/usr/local/bin/check-mysql.sh
+ExecStart=/usr/local/bin/mysql-check.sh
 Restart=on-failure
 RestartSec=30
 StandardOutput=append:/var/log/mysql-check.log
