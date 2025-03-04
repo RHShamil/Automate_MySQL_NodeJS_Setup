@@ -4,7 +4,7 @@
 This project streamlines the deployment of **MySQL** and **Node.js** on AWS EC2 instances using **Pulumi** for infrastructure provisioning. The EC2 instances automatically fetch and execute **user data scripts** from a centralized **GitHub repository**, ensuring a standardized and repeatable setup process.
 
 ## Architecture
-![Project Architecture](./image.png)
+![Project Architecture](./Auto_setup.png)
 
 ### Key Components
 1. **Pulumi Code** (Runs on `My_Machine`)
